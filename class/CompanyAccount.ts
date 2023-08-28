@@ -1,17 +1,14 @@
-import { DioAccount } from './DioAccount'
+import { DioAccount } from './DioAccount';
 
 export class CompanyAccount extends DioAccount {
-  
   constructor(name: string, accountNumber: number) {
     super(name, accountNumber)
   }
 
-  getLoan = (): void => {
+  getLoan = (value: number): void => {
+    this.setBalance(value);
+    
     console.log('You have got a loan')
   }
-
-  // Polimorfism: override the method from the base class
-  deposit: () => void = () => {
-    console.log('You have deposited from CompanyAccount')
-  }
 }
+
