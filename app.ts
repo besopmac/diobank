@@ -7,15 +7,15 @@ const companyAccount: CompanyAccount = new CompanyAccount('Doe John', 987654321)
 const specialAccount: SpecialAccount = new SpecialAccount('Marina Campos', 123456789)
 
 // Deposit
-// peopleAccount.deposit(1500)
-// companyAccount.deposit(20000)
+peopleAccount.deposit(1500)
+companyAccount.deposit(20000)
 
 // Withdraw
-// peopleAccount.withdraw(500)
-// companyAccount.withdraw(25000)
+peopleAccount.withdraw(500)
+companyAccount.withdraw(25000)
 
 // Get Loan
-// companyAccount.getLoan(5000)
+companyAccount.getLoan(5000)
 
 // Special Deposit
-// specialAccount.specialDeposit(500)
+specialAccount.specialDeposit(500)
